@@ -18,11 +18,23 @@ const copyBtn = document.getElementById('copyBtn');
 copyBtn.addEventListener('click', () => {
 const colorCode = document.getElementById('colorCode').textContent;
 navigator.clipboard.writeText(colorCode).then(() => {
-  alert('Color code copied to clipboard: ' + colorCode);
+  showToast('Color copied to clipboard!');
 }).catch(err => {
   console.error('Could not copy text: ', err);
 });
 })
+
+// function to show a toast message when the copy button is clicked
+function  showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3000);
+
+}
 
 // function to update the color display and color code when the flip button is clicked
 function updateColorDisplay() {
