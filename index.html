@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="color-flipper">
+            <header>
+                <h1>Color Flipper</h1>
+                <h2>Click the button to generate a new color</h2>
+            </header>
+        
+
+            <div id="colorDisplay" class="color-display">
+            <span id="colorCode">#C0C0C0</span>
+            </div>
+
+            <div class="flip-copy-btns">
+                <button id="flipBtn">Flip Color</button>
+                <button id="copyBtn"><i class="fa-regular fa-copy"></i>Copy</button>
+            </div>
+            <div class="history-container">
+                <h3>Color History</h3>
+                <ul id="colorHistory" class="color-history">
+                    <!-- Color history items will be added here -->
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
