@@ -172,7 +172,7 @@ header h2 {
     border-radius: 5px;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .toast.show {
