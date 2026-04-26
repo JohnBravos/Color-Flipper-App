@@ -156,3 +156,7 @@ header h2 {
     border: 2px solid #fff;
     transition: transform 0.2s ease;
 }
+
+#colorHistory li:hover {
+    transform: scale(1.2);
+}
